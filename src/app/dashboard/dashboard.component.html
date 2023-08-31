@@ -1,0 +1,24 @@
+<mat-card>
+    <mat-card-content>
+        <h2>
+            User DashBoard
+        </h2>
+        <table class="user-table" >
+         <tr>
+            <th><b>Name</b></th>
+            <th><b>Position</b></th>
+            <th><b>Address</b></th>
+            <th><b>PhoneNumber</b></th>
+        </tr> 
+        <tr *ngFor="let u of user">
+
+                <td>{{u.name}}</td>
+                <td>{{u.position}}</td>
+                <td>{{u.address}}</td>
+                <td>{{u.phoneNumber}}</td>
+            </tr>
+          
+    
+        </table>
+    </mat-card-content>
+</mat-card>
